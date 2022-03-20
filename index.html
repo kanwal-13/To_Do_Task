@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> to - do list </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a3ece7076.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="mainbox">
+        <h1 id="mainheading"> TO-DO LIST </h1>
+        <div id="input">
+            <label for="task">Enter Your Task    : </label>
+            <input id="task" placeholder="enter your task"> <br> <br>
+            <label for="deadline">Enter the deadline: </label>
+            <input id="deadline" type="date"> <br> <br>
+            <label for="deadline">Enter the description: </label>
+            <input id="description" placeholder="add description">
+            <button id="addbutton">ADD</button>
+        </div>
+
+        <div id="tasks">
+            <table id="table">
+                <thead>
+                    <tr id="headings">
+                        <th id="column1">Task Tittle</th>
+                        <th id="column2">Deadline</th>
+                        <th id="hiddenheading">Country</th>
+                    </tr>
+                </thead>
+                <tbody id="tasktable">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div id="clearbutton">
+            <span id="cleardiv">Tasks Remaining: </span> <br>
+            <button id="clear">CLEAR ALL</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
